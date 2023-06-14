@@ -8,87 +8,12 @@
 
     <!--Load fullcalendar (uses around 50mb ram)-->
     <script src='js/fullcalendar/dist/index.global.min.js'></script>
-    <!--Fuse.js because it'll take too long to implement good search-->
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script> 
-
-    <!--Load font (montserrat)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <!--Load stylesheet-->
-    <link href='styles.css' rel='stylesheet'/>
 
     <!--Load javascript-->
-    <script src='js/Calendar.js'> </script>
-    <script src='js/Course.js'> </script>
     <script src='js/main.js'> </script>
 </head>
+
 <body>
-
-
-    
-    <div id="outer-container">
-        <div id="sidebar">
-            <div id="sidebarcontainer">
-                <header>
-                    <p>❤️</p>
-                    <a href="https://github.com/Highfire1/langara-course-searcher">Github</a>
-                    <a class="hidden">About</a>
-                    <a class="hidden">FAQ</a>
-                    <p>❤️</p>
-                </header>
-
-                <input type="text" id="courseSearchBar" placeholder="Search for course...">
-                
-                <div id="courseOptions">
-                    
-                    <p id="searchResults">Loading courses...</p>
-
-                    <input type="checkbox" id="weekendCheckbox">
-                    <label for="weekendCheckbox">Show weekends.</label>
-                    
-
-                    <br>
-                    <label>Select term: </label> 
-                    <select id="termSelector">
-                        <option value="202330">2023 Fall</option>
-                    </select>
-
-                    
-                    
-                    <br>
-                    <input type="checkbox" id="conflictCheckbox">
-                    <label for="conflictCheckbox">Hide courses that conflict with selected courses.</label>
-                    <!-- hidden until i code them
-                    <br>
-                    <input type="checkbox" id="restrictedCheckbox">
-                    <label for="restrictedCheckbox">Filter out restricted courses.</label>
-                    -->
-
-                    <br>
-                    <input id="showAllButton" type="button" value="Show all courses in list.">
-                    <br>
-                    <input id="copyButton" type="button" value="Copy selected courses to clipboard.">  
-                    
-                    <br>
-                    <input type="checkbox" id="showColors">
-                    <label for="showColors">Highlight courses by seats available.</label>
-                </div>
-            
-
-                <div id="courselist">
-                    <div>
-                        <h3 >Loading Courses...</h3>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div id="content">
-            <div id='calendar'></div>
-        </div>
-    </div>
+    <div id='calendar'></div>
 </body>
 </html>
