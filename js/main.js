@@ -9,12 +9,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
       var FCalendar = new FullCalendar.Calendar(calendarElement, {
         schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
-        rerenderDelay: 10,
 
         // calendar stuff
-        timeZone: 'America/Vancouver',
-        initialView: 'timeGridWeek', // 'resourceTimelineDay'
-
         initialDate: initial_date, // start on the second week of courses
       })
 
